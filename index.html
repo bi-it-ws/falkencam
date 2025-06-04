@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zwei Videos nebeneinander</title>
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle, rgba(230, 190, 110, 1) 0%, rgba(230, 100, 70, 1) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container {
+      display: flex;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 867px;
+      height: 550px;
+      border: 8px solid #87c85a;
+    }
+
+    @media (max-width: 1200px) {
+      .video-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MbV-hopuoJY?si=Y8dG2zBPw-vukxuq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fqDJ00vsf5Y?si=tcj3XMDVBvdyBed5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
